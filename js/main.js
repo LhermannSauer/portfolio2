@@ -15,4 +15,12 @@ $(function () {
       backgroundHeader.removeClass("animate__headShake");
     }, 1500);
   });
+
+  const inputbtn = $(".input__button");
+  inputbtn.click(function (e) {
+    $(this).toggleClass("active");
+    $(this).siblings().removeClass("active");
+  });
 });
+
+
