@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="https://i.ibb.co/brPy5bk/preview.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content="Welcome to my online portfolio. You can see diferent projects certifications and a bit of information about me 😊"
+    />
+    <meta
+      property="description"
+      content="Welcome to my online portfolio. You can see diferent projects certifications and a bit of information about me 😊"
+    />
+    <meta property="og:url" content="https://lhermannsauer.github.io" />
+    <meta property="og:title" content="Leandro Hermann's Online Portfolio" />
+    <title>Leandro Hermann Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/cbc67c8581.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav collapsible">
+      <span class="fas fa-caret-square-down nav__toggler"></span>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#welcome">WELCOME</a></li>
+        <li class="nav__item"><a href="#about">ABOUT</a></li>
+        <li class="nav__item"><a href="#projects">PROJECTS</a></li>
+        <li class="nav__item"><a href="#certifications">CERTIFICATIONS</a></li>
+        <li class="nav__item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- WELCOME SECTION -->
+
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--cols-2">
+        <header class="block__header hero__content">
+          <h1 class="hero__heading">
+            Hi, it is <br />
+            nice meeting you
+          </h1>
+          <p class="hero__text">Welcome to my online portfolio.</p>
+        </header>
+
+        <picture>
+          <img
+            class="hero__image"
+            src="https://i.ibb.co/HYrPn4M/1612827948123.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!-- BACKGROUND SECTION -->
+
+    <section class="block container background">
+      <h2 class="block__header animate__animated">My Background</h2>
+
+      <article class="grid grid--cols-2 step">
+        <img
+          src="/images/languages.png"
+          alt=""
+          class="background__image"
+          data-aos="fade-right"
+        />
+        <p data-aos="zoom-out">
+          During quarantine in 2020, I started learning different programming
+          languages, such as Python, C#, JavaScript and Java, learning the key
+          differences and the use of each one, so I had knowledge of the options
+          before specializing in one of them.
+        </p>
+      </article>
+      <article class="grid grid--cols-2 step">
+        <img
+          src="/images/backend.png"
+          alt=""
+          class="background__image"
+          data-aos="fade-left"
+        />
+        <p data-aos="zoom-out">
+          From there I moved into backend development. First I learned how to
+          write a simple store backend with Django, as Python was the language I
+          feel most comfortable with. Then I looked into NodeJs, as I thought
+          JavaScript is a key language to know.
+        </p>
+      </article>
+      <article class="grid grid--cols-2 step">
+        <img
+          src="/images/frontend.png"
+          alt=""
+          class="background__image"
+          data-aos="fade-right"
+        />
+        <p data-aos="zoom-out">
+          Finally, as a curious person who likes to have an understanding of the
+          big picture, I could not help but start learning a bit of frontend
+          development with React and React Native, along with Redux and
+          different CSS libraries.
+        </p>
+      </article>
+    </section>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
