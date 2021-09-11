@@ -58,10 +58,11 @@ $(function () {
         $(".input__button").removeClass(
           "active animate__animated animate__pulse"
         );
-        if ($(this).parents("#projects").length)
+        if ($(this).parents("#projects").length) {
           filterByLanguage($(this).attr("data-value"));
-      } else if ($(this).parents("#certifications").length) {
-        filterCertificateByLanguage($(this).attr("data-value"));
+        } else if ($(this).parents("#certifications").length) {
+          filterCertificateByLanguage($(this).attr("data-value"));
+        }
       }
     });
   }
