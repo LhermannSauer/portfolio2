@@ -323,7 +323,7 @@ a {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 15rem 15rem;
+  padding: 15rem 2rem;
   height: 100vh;
 }
 
@@ -372,6 +372,9 @@ a {
   gap: 5rem;
   align-items: center;
 }
+.background .container {
+  width: 80%;
+}
 
 .step {
   text-align: center;
@@ -383,7 +386,7 @@ a {
 }
 .background .block__header {
   transition: all 1s ease-out;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .background .block__header:hover {
   filter: brightness(1.5);
@@ -541,7 +544,7 @@ a {
   position: relative;
 }
 .custom-options {
-  background: #fff5;
+  background: #fffe;
   border-radius: 15px;
   border: none;
   display: block;
@@ -793,16 +796,16 @@ a {
     var(--color-background-8) 100%
   );
   padding-top: 40rem;
+  padding-bottom: 20rem;
   height: 100vh;
 }
 .contact .block__header {
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: white;
   font-weight: 800;
 }
 .links {
   display: block;
-  font-size: 3rem;
   font-weight: 800;
   margin: 5rem auto;
   text-align: center;
@@ -811,7 +814,7 @@ a {
 .contact a {
   color: white;
   display: inline-block;
-  font-size: 5rem;
+  font-size: 2.4rem;
   letter-spacing: 3px;
   margin: 2rem 5rem;
   text-decoration: none;
@@ -830,4 +833,13 @@ a {
 }
 .color-stress {
   color: var(--color-accent);
+}
+
+@media screen and (min-width: 768px) {
+  .contact a {
+    font-size: 4rem;
+  }
+  .contact .block__header {
+    font-size: 5rem;
+  }
 }
