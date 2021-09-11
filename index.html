@@ -35,7 +35,7 @@
       <span class="fas fa-caret-square-down nav__toggler"></span>
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#welcome">WELCOME</a></li>
-        <li class="nav__item"><a href="#about">ABOUT</a></li>
+        <li class="nav__item"><a href="#background">BACKGROUND</a></li>
         <li class="nav__item"><a href="#projects">PROJECTS</a></li>
         <li class="nav__item"><a href="#certifications">CERTIFICATIONS</a></li>
         <li class="nav__item"><a href="#contact">CONTACT</a></li>
@@ -44,7 +44,7 @@
 
     <!-- WELCOME SECTION -->
 
-    <section class="block block--dark block--skewed-left hero">
+    <section class="block block--dark block--trimmed-bottom hero" id="welcome">
       <div class="container grid grid--cols-2">
         <header class="block__header hero__content">
           <h1 class="hero__heading">
@@ -66,51 +66,364 @@
 
     <!-- BACKGROUND SECTION -->
 
-    <section class="block container background">
-      <h2 class="block__header animate__animated">My Background</h2>
+    <section class="background block--trimmed" id="background">
+      <div class="block container">
+        <h2 class="block__header animate__animated">My Background</h2>
 
-      <article class="grid grid--cols-2 step">
-        <img
-          src="/images/languages.png"
-          alt=""
-          class="background__image"
-          data-aos="fade-right"
-        />
-        <p data-aos="zoom-out">
-          During quarantine in 2020, I started learning different programming
-          languages, such as Python, C#, JavaScript and Java, learning the key
-          differences and the use of each one, so I had knowledge of the options
-          before specializing in one of them.
-        </p>
-      </article>
-      <article class="grid grid--cols-2 step">
-        <img
-          src="/images/backend.png"
-          alt=""
-          class="background__image"
-          data-aos="fade-left"
-        />
-        <p data-aos="zoom-out">
-          From there I moved into backend development. First I learned how to
-          write a simple store backend with Django, as Python was the language I
-          feel most comfortable with. Then I looked into NodeJs, as I thought
-          JavaScript is a key language to know.
-        </p>
-      </article>
-      <article class="grid grid--cols-2 step">
-        <img
-          src="/images/frontend.png"
-          alt=""
-          class="background__image"
-          data-aos="fade-right"
-        />
-        <p data-aos="zoom-out">
-          Finally, as a curious person who likes to have an understanding of the
-          big picture, I could not help but start learning a bit of frontend
-          development with React and React Native, along with Redux and
-          different CSS libraries.
-        </p>
-      </article>
+        <article class="grid grid--cols-2 step">
+          <img
+            src="/images/languages.png"
+            alt=""
+            class="background__image"
+            data-aos="fade-right"
+          />
+          <p data-aos="zoom-out">
+            During quarantine in 2020, I started learning different programming
+            languages, such as Python, C#, JavaScript and Java, learning the key
+            differences and the use of each one, so I had knowledge of the
+            options before specializing in one of them.
+          </p>
+        </article>
+        <article class="grid grid--cols-2 step">
+          <img
+            src="/images/backend.png"
+            alt=""
+            class="background__image"
+            data-aos="fade-left"
+          />
+          <p data-aos="zoom-out">
+            From there I moved into backend development. First I learned how to
+            write a simple store backend with Django, as Python was the language
+            I feel most comfortable with. Then I looked into NodeJs, as I
+            thought JavaScript is a key language to know.
+          </p>
+        </article>
+        <article class="grid grid--cols-2 step">
+          <img
+            src="/images/frontend.png"
+            alt=""
+            class="background__image"
+            data-aos="fade-right"
+          />
+          <p data-aos="zoom-out">
+            Finally, as a curious person who likes to have an understanding of
+            the big picture, I could not help but start learning a bit of
+            frontend development with React and React Native, along with Redux
+            and different CSS libraries.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects block--trimmed" id="projects">
+      <div class="block container">
+        <h2 class="block__header animate__animated">My Projects</h2>
+
+        <div class="grid grid--cols-2 block__filter">
+          <div class="input-group grid">
+            <p class="filter__subtitle">Filter Projects</p>
+            <div class="tab-selector">
+              <button class="input__button" id="frontend">Frontend</button
+              ><button class="input__button" id="backend">Backend</button>
+            </div>
+          </div>
+          <div class="input-group grid select">
+            <p class="filter__subtitle">Filter by programming language</p>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <span>All</span>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="all"
+                    >All</span
+                  >
+                  <span class="custom-option" data-value="python">Python</span>
+                  <span class="custom-option" data-value="javascript"
+                    >Javascript</span
+                  >
+                  <span class="custom-option" data-value="html">HTML/CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid--cols-3 project__list">
+          <div class="project-tile javascript frontend" id="vidly">
+            <a
+              class="projectlink"
+              target="_blank"
+              href="https://powerful-badlands-59578.herokuapp.com/"
+              id="vidly-link"
+            >
+              <img
+                class="projectSnapshot"
+                src="https://i.ibb.co/vmkSFzG/vidly.jpg"
+              />
+            </a>
+            <h3 class="project-title">Vidly - a React Project</h3>
+            <p class="project__description">
+              A basic frontend project using react and bootstrap, simulating a
+              database for a movie rental site. Pagination, Filtering,
+              Authorization and Authentication, registering users.
+            </p>
+          </div>
+
+          <div class="project-tile html frontend" id="moshified">
+            <a
+              class="projectlink"
+              target="_blank"
+              href="https://suspicious-snyder-a22567.netlify.app/"
+              id="-link"
+            >
+              <img class="projectSnapshot" src="images/moshified.JPG" />
+            </a>
+            <h3 class="project-title">Moshified</h3>
+            <p class="project__description">
+              A fully responsive webpage, end project of a series of HTML/CSS
+              courses. Created based on a photoshop design using Object-oriented
+              CSS. You can check the code
+              <a href="https://github.com/LhermannSauer/Moshified">here</a>.
+            </p>
+          </div>
+
+          <div class="project-tile frontend html" id="productLandingDiv">
+            <a
+              class="projectlink"
+              target="_blank"
+              href="https://codepen.io/leandro-hermann-sauer"
+              id="product-landing"
+            >
+              <img
+                class="projectSnapshot"
+                src="https://i.ibb.co/ZcSXBpN/product-landing-project.jpg"
+              />
+            </a>
+            <h3 class="project-title">Various HTML/CSS</h3>
+            <p class="project__description">
+              Single pages done as projects for courses or challenges (some a
+              bit updated, will make them prettier soon 😊)
+            </p>
+          </div>
+
+          <div class="project-tile frontend javascript">
+            <a
+              class="projectlink"
+              target="_blank"
+              href="https://github.com/LhermannSauer/DoneWithIt"
+            >
+              <img
+                class="projectSnapshot"
+                src="images/done with it.JPG"
+                id="doneWithIt"
+              />
+            </a>
+            <h3 class="project-title">Done with It</h3>
+            <p class="project__description">
+              Mobile app developed with React Native as a final project of a
+              react course. The app allows you to publish products for sale and
+              contact owners of other items. Will be published on Heroku,
+              Currently developing the backend.
+            </p>
+          </div>
+
+          <div class="project-tile javascript backend" id="vidlybackend">
+            <a
+              class="projectlink"
+              href="https://github.com/LhermannSauer/Vidly-API"
+              id="online-store-backend"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/dLtxG8h/vidly-backend.jpg"
+                class="projectSnapshot"
+              />
+            </a>
+
+            <h3 class="project-title">Vidly Backend - NodeJs</h3>
+            <p class="project__description">
+              A simple backend for the vidly project, made with Node, Express
+              and MongoDB, RESTful API, middleware, authentication and
+              authorization, CRUD operations, data validation, unit &
+              integration testing, Test-driven Development
+            </p>
+          </div>
+
+          <div class="project-tile python backend" id="storebackend">
+            <a
+              class="projectlink"
+              href="https://github.com/LhermannSauer/online-store_Django-project_-codewithMosh"
+              id="online-store-backend"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/VVXQ8P4/storeproject.jpg"
+                class="projectSnapshot"
+              />
+            </a>
+            <h3 class="project-title">Store backend - Django</h3>
+            <p class="project__description">
+              Backend service for an online store, using Django and MySQL. Data
+              migration, Djangos ORM, filtering, searching, customizing the
+              admin site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications block--trimmed" id="certifications">
+      <div class="block">
+        <h2 class="block__header">Previous steps in my path</h2>
+
+        <div class="grid grid--cols-2 block__filter">
+          <div class="input-group grid">
+            <p class="filter__subtitle">Filter Certificates</p>
+            <div class="tab-selector">
+              <button class="input__button" id="frontend">Frontend</button
+              ><button class="input__button" id="backend">Backend</button>
+              <button class="input__button" id="mobile">Mobile</button>
+            </div>
+          </div>
+          <div class="input-group grid select">
+            <p class="filter__subtitle">Filter by programming language</p>
+
+            <div class="select-wrapper">
+              <div class="select">
+                <div class="select__trigger">
+                  <span>All</span>
+                  <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="all"
+                    >All</span
+                  >
+                  <span class="custom-option" data-value="python">Python</span>
+                  <span class="custom-option" data-value="javascript"
+                    >Javascript</span
+                  >
+                  <span class="custom-option" data-value="html">HTML/CSS</span>
+                  <span class="custom-option" data-value="golang">GoLang</span>
+                  <span class="custom-option" data-value="java">Java</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block grid grid--cols-3 certificate__list">
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="python backend"
+            ><img src="/images/certificates/django mosh.JPG" alt=""
+          /></a>
+          <a
+            href="https://www.udemy.com/certificate/UC-a1c1787b-7362-4a98-87c0-cfca6ee8d8ea/"
+            target="_blank"
+            class="golang"
+            ><img src="/images/certificates/Golang.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="html frontend"
+            ><img src="/images/certificates/HTML3.JPG" alt=""
+          /></a>
+          <a href="https://codewithmosh.com/" target="_blank" class="java"
+            ><img src="/images/certificates/java1.JPG" alt=""
+          /></a>
+          <a href="https://codewithmosh.com/" target="_blank" class="java"
+            ><img src="/images/certificates/java2.JPG" alt=""
+          /></a>
+          <a
+            href="https://www.freecodecamp.org/lhermann"
+            target="_blank"
+            class="javascript backend"
+            ><img src="/images/certificates/js algorithms.JPG" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="javascript frontend"
+            ><img src="/images/certificates/mastering react.JPG" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="javascript backend"
+            ><img src="/images/certificates/Node JS.JPG" alt=""
+          /></a>
+          <a href="https://codewithmosh.com/" target="_blank" class="java"
+            ><img src="/images/certificates/OOP.jpg" alt=""
+          /></a>
+          <a
+            href="https://www.freecodecamp.org/lhermann"
+            target="_blank"
+            class="python"
+            ><img src="/images/certificates/python data analysis.JPG" alt=""
+          /></a>
+          <a
+            href="https://www.udemy.com/certificate/UC-3f0e0d25-ad53-4ad1-a430-f3fa8167b3d5/"
+            target="_blank"
+            class="python backend"
+            ><img src="/images/certificates/python developer.jpg" alt=""
+          /></a>
+          <a
+            href="https://www.udemy.com/certificate/UC-a9c902c1-ce05-4ed4-8672-f4c7504c15af/"
+            target="_blank"
+            class="python backend"
+            ><img src="/images/certificates/Python scripting.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="javascript frontend"
+            ><img src="/images/certificates/React Fundamentals.JPG" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="mobile javascript frontend"
+            ><img src="/images/certificates/React native advanced.JPG" alt=""
+          /></a>
+          <a
+            href="https://www.freecodecamp.org/lhermann"
+            target="_blank"
+            class="html frontend"
+            ><img src="/images/certificates/responsive web design.JPG" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block contact block--trimmed" id="contact">
+      <div class="container">
+        <h2 class="block__header">
+          Let's create something new,<br /><span class="color-stress stress"
+            >together</span
+          >
+        </h2>
+
+        <div class="links">
+          <a
+            href="https://github.com/LhermannSauer"
+            target="_blank"
+            id="profile-link"
+            ><i class="fab fa-github"></i>GitHub</a
+          >
+          <!-- <a href='https://replit.com/@Lhermannsauer' target="_blank"><i class="fas fa-code"></i>Replit</a>
+          <a href='https://codepen.io/leandro-hermann-sauer' target="_blank"><i class="fab fa-html5"></i>PenCode</a> -->
+          <a href="mailto:l.hermannsauer@gmail.com"
+            ><i class="far fa-envelope"></i>Email Me</a
+          >
+          <a href="tel:+5491137837514"
+            ><i class="fas fa-mobile-alt"></i>Call Me</a
+          >
+        </div>
+      </div>
     </section>
 
     <script src="/js/main.js"></script>
