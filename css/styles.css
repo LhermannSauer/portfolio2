@@ -378,7 +378,7 @@ a {
 
 .step {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 4rem;
   color: #232323;
@@ -398,7 +398,7 @@ a {
   }
   .step {
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2;
   }
   .background .block__header {
