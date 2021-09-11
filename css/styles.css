@@ -235,7 +235,7 @@ a {
   }
 }
 
-.container {
+`.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -795,7 +795,7 @@ a {
     var(--color-background-6) 0%,
     var(--color-background-8) 100%
   );
-  padding-top: 40rem;
+  padding-top: 20rem;
   padding-bottom: 20rem;
   height: 100vh;
 }
@@ -841,5 +841,8 @@ a {
   }
   .contact .block__header {
     font-size: 5rem;
+  }
+  .contact {
+    padding-top: 35rem;
   }
 }
