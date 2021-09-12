@@ -12,6 +12,7 @@
   --color-background-8: #343a40;
   --color-accent: #a0c4ff;
   --color-primary: #caffbf;
+  --color-headings: #6a9f5f;
 }
 *,
 *::after,
@@ -46,7 +47,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
@@ -164,11 +165,15 @@ a {
 .block {
   padding: 15rem 2rem;
   min-height: 100vh;
+  margin: auto;
 }
+
 .block__header {
   text-align: center;
+  font-weight: 700;
+  font-size: 3.8rem;
   letter-spacing: 2px;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .block--dark {
   background-color: #000;
@@ -235,7 +240,7 @@ a {
   }
 }
 
-`.container {
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -340,6 +345,7 @@ a {
   .hero {
     font-size: 4rem;
     font-weight: 800;
+    padding: 30rem 6rem;
   }
   /* .hero .grid {
     grid-template-columns: 75% 25%;
@@ -350,9 +356,6 @@ a {
   .hero__content {
     align-self: flex-start;
     text-align: left;
-  }
-  .hero__btn {
-    padding: 2rem 6rem;
   }
   .hero__image {
     clip-path: polygon(70% 0, 95% 50%, 70% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -386,7 +389,6 @@ a {
 }
 .background .block__header {
   transition: all 1s ease-out;
-  font-size: 3.5rem;
 }
 .background .block__header:hover {
   filter: brightness(1.5);
@@ -423,12 +425,10 @@ a {
   padding: 2rem 1rem;
   box-shadow: 0px 0px 5px 5px rgba(55, 55, 55, 0.2);
   border-radius: 15px;
-  /* padding-bottom: 15rem; */
   margin-bottom: 3rem;
 }
 
 .projects {
-  font-family: "Urbanist", sans-serif;
   background: linear-gradient(
     225deg,
     var(--color-background-2) 0%,
@@ -436,20 +436,12 @@ a {
   );
   min-height: 100vh;
 }
-/* @media screen and (min-width: 768px) {
-  .projects {
-  }
-} */
-
 .projects .block {
   max-width: 2000px;
   margin: 0 auto;
 }
-
 .projects .block__header {
-  font-size: 4rem;
-  margin-top: 0;
-  margin-bottom: 7rem;
+  color: rgb(48, 122, 115);
 }
 
 .filter__subtitle {
@@ -662,7 +654,6 @@ a {
 /* CERTIFICATIONS */
 
 .certifications {
-  font-family: "Urbanist", sans-serif;
   background: linear-gradient(
     135deg,
     var(--color-background-3) 0%,
@@ -738,6 +729,9 @@ a {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.certifications .block__header {
+  color: rgb(29, 97, 141);
+}
 
 @media screen and (min-width: 768px) {
   .certifications {
@@ -800,9 +794,8 @@ a {
   height: 100vh;
 }
 .contact .block__header {
-  font-size: 3rem;
   color: white;
-  font-weight: 800;
+  font-size: 2.4rem;
 }
 .links {
   display: block;
@@ -814,7 +807,7 @@ a {
 .contact a {
   color: white;
   display: inline-block;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   margin: 2rem 5rem;
   text-decoration: none;
