@@ -789,7 +789,7 @@ a {
     var(--color-background-6) 0%,
     var(--color-background-8) 100%
   );
-  padding-top: 20rem;
+  padding-top: 10%;
   padding-bottom: 20rem;
   height: 100vh;
 }
