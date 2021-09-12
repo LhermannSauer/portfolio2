@@ -789,7 +789,7 @@ a {
     var(--color-background-6) 0%,
     var(--color-background-8) 100%
   );
-  padding-top: 10%;
+  padding-top: 5rem;
   padding-bottom: 20rem;
   height: 100vh;
 }
@@ -836,6 +836,6 @@ a {
     font-size: 5rem;
   }
   .contact {
-    padding-top: 35rem;
+    padding-top: 15rem;
   }
 }
